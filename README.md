@@ -9,14 +9,10 @@ pip install -r requirements.txt
 ```
 Configure environment variables. Create a `.env` file in the project's root directory and fill it with the following values:
 ```env
-DATABASE_ENGINE=<database engine>
-DATABASE_HOST=<database host address>
-DATABASE_PORT=<database port>
-DATABASE_NAME=<database name>
-DATABASE_USER=<database user>
-DATABASE_PASSWORD=<database password>
+DATABASES_DEFAULT={"ENGINE": <engine>, "HOST": <host>, "PORT": <port>, "NAME": <name>, "USER": <user>, "PASSWORD": <password>}
 SECRET_KEY=<Django secret key>
 DEBUG=<True or False for debug mode>
+ALLOWED_HOSTS=[<allowed hosts>]
 ```
 Run the development server:
 ```bash
