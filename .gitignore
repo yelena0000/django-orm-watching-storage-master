@@ -8,3 +8,6 @@ __pycache__/
 Thumbs.db
 *.env
 *.log
+.replit
+poetry.lock
+pyproject.toml
