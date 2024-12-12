@@ -6,7 +6,7 @@ env.read_env()
 
 
 DATABASES = {
-    'default': env.dict('DATABASES_DEFAULT')
+    'default': env.json('DATABASES_DEFAULT')
 }
 
 INSTALLED_APPS = ['datacenter']
@@ -17,7 +17,7 @@ DEBUG = env.bool('DEBUG')
 
 ROOT_URLCONF = 'project.urls'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS')
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
